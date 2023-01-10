@@ -1,0 +1,53 @@
+.indexViewContainer {
+  position: absolute;
+  width: 65%;
+  top: 50%;
+  left: 22%;
+  transform: translate(-22%, -50%);
+}
+
+.indexViewContainerHeader {
+  display: flex;
+  margin-bottom: 44px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.indexFormContent {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.indexFormTypeBox {
+  display: flex;
+  margin: 54px auto;
+}
+
+.priceHighlight {
+  color: #fa892e;
+}
+
+#accountList tr {
+  height: 50px;
+}
+
+#accountList tr td:nth-child(1),
+#accountList tr td:last-child {
+  display: none;
+}
+
+#accountList tr td:nth-child(2) {
+  width: 150px;
+}
+#accountList tr td:nth-child(3) {
+  width: 150px;
+}
+#accountList tr td:nth-child(4) {
+  width: 100px;
+}
+#accountList tr td:nth-child(5) {
+  width: 300px;
+}
+#accountList tr td:nth-child(6) {
+  width: 200px;
+}

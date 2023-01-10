@@ -1,0 +1,43 @@
+.summaryContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#dateBox {
+  display: flex;
+}
+
+#summaryHeader {
+  display: flex;
+}
+
+.summaryContainer h1 .summaryContainer h2 {
+  text-align: center;
+}
+
+.summaryTableBox {
+  display: flex;
+  width: 100%;
+}
+
+.summaryTableBox table {
+  width: 50%;
+}
+
+.summaryTableBox table tr td:last-child {
+  color: #fa892e;
+}
+
+.summaryTableBox table .first {
+  font-size: 30px;
+  font-weight: bold;
+}
+.summaryTableBox table .second {
+  font-size: 22px;
+}
+.summaryTableBox table .child {
+  font-size: 16px;
+}

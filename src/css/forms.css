@@ -1,0 +1,24 @@
+.formCenter {
+	background-color: #fff;
+	border-radius: 12px;
+	width: 478px;
+	height: 642px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.formCenter > .signFormContent > input {
+	height: 56px;
+}
+
+.formRight {
+	background-color: #ffffff;
+	border-left: 1px solid #efefef;
+	width: 20%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가계부</title>
+  </head>
+  <body>
+    <a href="summary">월별 통계로 이동하기</a>
+    <div class="indexViewContainer">
+      <div class="indexViewContainerHeader">
+        <div id="dateBox">
+          <button data-btn="prev">이전</button>
+          <span id="dateText"></span>
+          <button data-btn="next">다음</button>
+        </div>
+        <div id="tableHeader">
+          <!-- <p id="tableHeader">이전 달 보다 <span class="priceHighlight">100만원</span> 더 썼어요</p> -->
+        </div>
+        <select id="viewGraph" name="viewGraph">
+          <option value="all">전체</option>
+          <option value="income">수입</option>
+          <option value="expense">지출</option>
+        </select>
+      </div>
+
+      <table id="accountList"></table>
+
+      <div id="tableFooter">
+        <!-- <p id="tableFooter">총 지출: <span class="priceHighlight">20,800</span>원</p> -->
+      </div>
+    </div>
+
+    <form class="formRight" id="writeForm">
+      <div class="indexFormContent">
+        <div class="indexFormTypeBox" id="formRadio">
+          <input type="radio" name="formType" id="expense" value="expense" checked />
+          <label for="expense">지출</label>
+          <input type="radio" name="formType" id="income" value="income" />
+          <label for="income">수입</label>
+        </div>
+
+        <p>날짜</p>
+        <input type="date" id="formDate" class="inputSquare" />
+
+        <p>분류</p>
+        <select class="inputSquare" id="formCategory"></select>
+
+        <p>금액</p>
+        <input type="number" class="inputSquare" id="formPrice" placeholder="금액" />
+
+        <p>메모</p>
+        <input class="inputSquare" id="formMemeo" placeholder="메모" />
+
+        <button class="submitBtn">등록</button>
+      </div>
+    </form>
+
+    <script src="accountBook.js"></script>
+    <script src="cssLoader.js"></script>
+  </body>
+</html>

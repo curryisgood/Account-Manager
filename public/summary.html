@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>월별 손익계산서</title>
+  </head>
+  <body>
+    <div class="summaryContainer">
+      <h1>비용 수익</h1>
+      <div id="dateBox">
+        <button data-btn="prev">이전</button>
+        <h2 id="dateText"></h2>
+        <button data-btn="next">다음</button>
+      </div>
+      <div class="summaryTableBox">
+        <table class="table" id="expenseGraph">
+          <tr id="totalExpense">
+            <td>총 지출</td>
+            <td>1,000,000 원</td>
+          </tr>
+          <tr id="floatExpense">
+            <td>유동 생활비</td>
+            <td>700,000 원</td>
+          </tr>
+          <tr id="detailExpense">
+            <td>식비</td>
+            <td>400,000 원</td>
+          </tr>
+          <tr id="fixExpense">
+            <td>고정 생활비</td>
+            <td>300,000원</td>
+          </tr>
+          <tr id="detailExpense">
+            <td>관리비</td>
+            <td>150,000원</td>
+          </tr>
+        </table>
+        <table class="table" id="incomeGraph">
+          <tr id="totalIncome">
+            <td>총 수입</td>
+            <td>1,500,000 원</td>
+          </tr>
+          <tr>
+            <td id="fixedIncome">고정 소득</td>
+            <td>1,000,000 원</td>
+          </tr>
+          <tr id="detailIncome">
+            <td>월급</td>
+            <td>800,000 원</td>
+          </tr>
+          <tr id="floatIncome">
+            <td>비정기 소득</td>
+            <td>500,000 원</td>
+          </tr>
+          <tr id="detailIncome">
+            <td>상여금</td>
+            <td>1,500,000 원</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="summary.js"></script>
+    <script src="cssLoader.js"></script>
+  </body>
+</html>

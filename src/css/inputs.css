@@ -1,0 +1,18 @@
+.inputUnderbar {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid black;
+	transition: 0.5s;
+	font-size: 20px;
+}
+.inputUnderbar:hover {
+	border-bottom: 1px solid #ffb880;
+}
+
+.inputSquare {
+	width: 100%;
+	border: 1px solid #ababab;
+	border-radius: 8px;
+	height: 30px;
+	margin-bottom: 36px;
+}
